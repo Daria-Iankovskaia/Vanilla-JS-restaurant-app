@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X_UA_Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla responsive Restaurant app</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body id="home">
+    <header>
+        <a href="#home" id="restoIconLink">
+            <img src="./pictures/restaurant.png" alt="Logo">
+        </a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">home</a>
+            <a href="#dishes">dishes</a>
+            <a href="#menu">menu</a>
+            <a href="#about">about</a>
+            <a href="#reviews">reviews</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" id="menuIconLink">
+                <img src="./pictures/menu.png" alt="Menu">
+            </a>
+            <a href="#" id="heartIconLink">
+                <img src="./pictures/heart.png" alt="Heart">
+            </a>
+            <a href="#" id="searchIconLink">
+                <img src="./pictures/search.png" alt="Search">
+            </a>
+            <a href="#" id="cartIconLink">
+                <img src="./pictures/shopping-bag.png" alt="Cart">
+            </a>
+        </div>
+    </header>
+
+    <form id="search-form">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="search-icon"></label>
+        <i id="close"></i>
+    </form>
+
+    <section class="home" id="dishes">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>spicy noodle</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="./photos/home-img-1.jpg" alt="home-img-1">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>fried chicken</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="./photos/home-img-2.jpg" alt="home-img-2">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>hot pizza</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="./photos/home-img-3.jpg" alt="home-img-3">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="dishes" id="menu">
+        <h3 class="sub-heading">our dishes</h3>
+        <h1 class="heading">MENU</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="heart_like">
+                    <img src="./pictures/heart.png" alt="Heart">
+                </a>
+                <a href="#" class="eyeIconLink">
+                    <img src="./pictures/eye.png" alt="Eye">
+                </a>
+                <img src="./tastyfood/dish-1.jpg" class="tasty-dish-img" alt="dish-1">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="heart_like">
+                    <img src="./pictures/heart.png" alt="Heart">
+                </a>
+                <a href="#" class="eyeIconLink">
+                    <img src="./pictures/eye.png" alt="Eye">
+                </a>
+                <img src="./tastyfood/dish-2.jpg" class="tasty-dish-img" alt="dish-2">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="half-star">
+                        <img src="./pictures/star-half-empty.png" alt="Half-Star">
+                    </a>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="heart_like">
+                    <img src="./pictures/heart.png" alt="Heart">
+                </a>
+                <a href="#" class="eyeIconLink">
+                    <img src="./pictures/eye.png" alt="Eye">
+                </a>
+                <img src="./tastyfood/dish-3.jpg" class="tasty-dish-img" alt="dish-3">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="heart_like">
+                    <img src="./pictures/heart.png" alt="Heart">
+                </a>
+                <a href="#" class="eyeIconLink">
+                    <img src="./pictures/eye.png" alt="Eye">
+                </a>
+                <img src="./tastyfood/dish-4.jpg" class="tasty-dish-img" alt="dish-4">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="half-star">
+                        <img src="./pictures/empty-star.png" alt="Half-Star">
+                    </a>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="heart_like">
+                    <img src="./pictures/heart.png" alt="Heart">
+                </a>
+                <a href="#" class="eyeIconLink">
+                    <img src="./pictures/eye.png" alt="Eye">
+                </a>
+                <img src="./tastyfood/dish-5.jpg" class="tasty-dish-img" alt="dish-5">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="half-star">
+                        <img src="./pictures/star-half-empty.png" alt="Half-Star">
+                    </a>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="heart_like">
+                    <img src="./pictures/heart.png" alt="Heart">
+                </a>
+                <a href="#" class="eyeIconLink">
+                    <img src="./pictures/eye.png" alt="Eye">
+                </a>
+                <img src="./tastyfood/dish-6.jpg" class="tasty-dish-img" alt="dish-6">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="half-star">
+                        <img src="./pictures/star-half-empty.png" alt="Half-Star">
+                    </a>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="heart_like">
+                    <img src="./pictures/heart.png" alt="Heart">
+                </a>
+                <a href="#" class="eyeIconLink">
+                    <img src="./pictures/eye.png" alt="Eye">
+                </a>
+                <img src="./tastyfood/dish-7.jpg" class="tasty-dish-img" alt="dish-7">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="half-star">
+                        <img src="./pictures/star-half-empty.png" alt="Half-Star">
+                    </a>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="heart_like">
+                    <img src="./pictures/heart.png" alt="Heart">
+                </a>
+                <a href="#" class="eyeIconLink">
+                    <img src="./pictures/eye.png" alt="Eye">
+                </a>
+                <img src="./tastyfood/dish-8.jpg" class="tasty-dish-img" alt="dish-8">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="star">
+                        <img src="./pictures/star.png" alt="Star">
+                    </a>
+                    <a href="#" id="half-star">
+                        <img src="./pictures/star-half-empty.png" alt="Half-Star">
+                    </a>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h3 class="sub-heading">about us</h3>
+        <h1 class="heading">why choose us</h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="./photos/about_us.jpg" alt="about_us">
+            </div>
+            <div class="content">
+                <h3>best food in the UK</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium accusamus debitis adipisci,
+                    eaque, ipsa, magni blanditiis sit voluptatibus sapiente voluptates recusandae. Asperiores dolores
+                    similique ullam reprehenderit eveniet ipsum, enim eos.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium accusamus debitis adipisci,
+                    eaque, ipsa, magni blanditiis sit voluptatibus sapiente voluptates recusandae. Asperiores dolores
+                    similique ullam reprehenderit eveniet ipsum, enim eos.</p>
+                <div class="icons-container">
+                    <div class="icons">
+                        <a href="#" id="deliveryIcon">
+                            <img src="./pictures/free-shipping.png" alt="delivery-icon">
+                        </a>
+                        <span>free delivery</span>
+                    </div>
+                    <div class="icons">
+                        <a href="#" id="dollarIcon">
+                            <img src="./pictures/save-money.png" alt="dollar-icon">
+                        </a>
+                        <span>easy payments</span>
+                    </div>
+                    <div class="icons">
+                        <a href="#" id="serviceIcon">
+                            <img src="./pictures/24-7.png" alt="24/7-service-icon">
+                        </a>
+                        <span>24/7 service</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <h3 class="sub-heading">Customer's Reviews</h3>
+        <h1 class="heading">what they say</h1>
+
+        <div class="reviews-container">
+            <div class="card-review">
+                <div class="box-review">
+                    <a href="#">
+                        <img src="./pictures/cat.png" alt="user-photo">
+                    </a>
+                    <div class="name-stars-reviews">
+                        <h3 class="customer-name">John Deo</h3>
+                        <div class="stars">
+                            <a href="#" id="star">
+                                <img src="./pictures/star.png" alt="Star">
+                            </a>
+                            <a href="#" id="star">
+                                <img src="./pictures/star.png" alt="Star">
+                            </a>
+                            <a href="#" id="star">
+                                <img src="./pictures/star.png" alt="Star">
+                            </a>
+                            <a href="#" id="star">
+                                <img src="./pictures/star.png" alt="Star">
+                            </a>
+                            <a href="#" id="half-star">
+                                <img src="./pictures/star-half-empty.png" alt="Half-Star">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus exercitationem perspiciatis illum
+                    qui, labore ducimus reprehenderit ut corporis blanditiis! Ex fugit rem eius assumenda iusto,
+                    repellat veritatis eveniet iure vel.</p>
+            </div>
+
+            <div class="card-review">
+                <div class="box-review">
+                    <a href="#">
+                        <img src="./pictures/panda.png" alt="user-photo">
+                    </a>
+                    <div class="name-stars-reviews">
+                        <h3 class="customer-name">John Deo</h3>
+                        <div class="stars">
+                            <a href="#" id="star">
+                                <img src="./pictures/star.png" alt="Star">
+                            </a>
+                            <a href="#" id="star">
+                                <img src="./pictures/star.png" alt="Star">
+                            </a>
+                            <a href="#" id="star">
+                                <img src="./pictures/star.png" alt="Star">
+                            </a>
+                            <a href="#" id="star">
+                                <img src="./pictures/star.png" alt="Star">
+                            </a>
+                            <a href="#" id="half-star">
+                                <img src="./pictures/star-half-empty.png" alt="Half-Star">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus exercitationem perspiciatis
+                    illum
+                    qui, labore ducimus reprehenderit ut corporis blanditiis! Ex fugit rem eius assumenda iusto,
+                    repellat veritatis eveniet iure vel.</p>
+            </div>
+
+            <div class="card-review">
+                <div class="box-review">
+                    <a href="#">
+                        <img src="./pictures/panda.png" alt="user-photo">
+                    </a>
+                    <div class="name-stars-reviews">
+                        <h3 class="customer-name">John Deo</h3>
+                        <div class="stars">
+                            <a href="#" id="star">
+                                <img src="./pictures/star.png" alt="Star">
+                            </a>
+                            <a href="#" id="star">
+                                <img src="./pictures/star.png" alt="Star">
+                            </a>
+                            <a href="#" id="star">
+                                <img src="./pictures/star.png" alt="Star">
+                            </a>
+                            <a href="#" id="star">
+                                <img src="./pictures/star.png" alt="Star">
+                            </a>
+                            <a href="#" id="half-star">
+                                <img src="./pictures/star-half-empty.png" alt="Half-Star">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus exercitationem perspiciatis
+                    illum
+                    qui, labore ducimus reprehenderit ut corporis blanditiis! Ex fugit rem eius assumenda iusto,
+                    repellat veritatis eveniet iure vel.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="locations">
+                <h3>Locations</h3>
+                <a href="#">Russia</a>
+                <a href="#">UK</a>
+                <a href="#">India</a>
+                <a href="#">France</a>
+                <a href="#">Italy</a>
+            </div>
+            <div class="qiuck_links">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#dishes">Dishes</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#review">Review</a>
+                <a href="#order">Order</a>
+            </div>
+            <div class="contact_info">
+                <h3>Contact Info</h3>
+                <a href="#">+123-456-7890</a>
+                <a href="#">+11-222-3333</a>
+                <a href="#">dilicfood.com</a>
+            </div>
+            <div class="follow_us">
+                <h3>Follow Us</h3>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">Meta</a>
+                <a href="#">Linkdin</a>
+            </div>
+        </div>
+        <h2>Copyright @2023 Delicious Food Inc</h2>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
